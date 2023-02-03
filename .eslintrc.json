@@ -21,11 +21,9 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "plugin:styled-components-a11y/recommended",
     "plugin:storybook/recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
-    "stylelint",
     "next"
   ],
   "parser": "@typescript-eslint/parser",
@@ -41,7 +39,6 @@
     "@typescript-eslint",
     "prettier",
     "react-hooks",
-    "styled-components-a11y",
     "import",
     "jest",
     "import-helpers"
@@ -49,8 +46,10 @@
   "rules": {
     "prettier/prettier": "error",
     "node/no-missing-import": "off",
+    "react/no-danger": "off",
     "sort-imports": "off",
     "node/no-unpublished-import": "off",
+    "object-curly-newline": "off",
     "no-undef": "off",
     "node/no-unsupported-features/es-syntax": "off",
     "node/no-extraneous-import": "off",
@@ -97,7 +96,7 @@
           "/^@testing-library/",
           "/storybook/",
           "/^components/",
-          "/^styled-components/",
+          "/^stitches/",
           "/^styles/",
           "module",
           ["parent", "sibling", "index"]

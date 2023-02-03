@@ -1,3 +1,3 @@
 {
-  "ignore": "pages|types|.d.ts|stories.tsx"
+  "ignore": "pages|types|styles|.d.ts|stories.tsx"
 }

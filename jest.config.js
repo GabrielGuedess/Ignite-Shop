@@ -18,6 +18,7 @@ const customJestConfig = {
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
+  snapshotSerializers: ['jest-stitches'],
 };
 
 module.exports = createJestConfig(customJestConfig);

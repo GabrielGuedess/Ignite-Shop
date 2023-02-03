@@ -1,32 +1,35 @@
-import { createGlobalStyle } from 'styled-components';
+import { globalCss } from 'styles';
 
-import { Poppins } from '@next/font/google';
+import { Roboto } from '@next/font/google';
 
-const poppins = Poppins({
-  weight: ['300', '400', '500'],
+const roboto = Roboto({
+  weight: ['400', '700'],
   display: 'swap',
   subsets: ['latin'],
 });
 
-export const GlobalStyles = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+export const globalStyles = globalCss({
+  '*': {
+    boxSizing: 'border-box',
+    margin: 0,
+    padding: 0,
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    '-webkit-font-smoothing': 'antialiased',
+    '-moz-osx-font-smoothing': 'grayscale',
 
-    :is(::before, ::after) {
-      box-sizing: inherit;
-    }
-  }
+    ':is(::before, ::after)': {
+      boxSizing: 'inherit',
+    },
+  },
 
-  html {
-    font-size: 62.5%;
-  }
+  html: {
+    fontSize: '62.5%',
+  },
 
-  body {
-    font-family: ${poppins.style.fontFamily};
-  }
-`;
+  body: {
+    fontFamily: roboto.style.fontFamily,
+    fontWeight: 400,
+    background: '$gray900',
+    color: '$gray100',
+  },
+});
