@@ -2,6 +2,9 @@ import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
+import { Container } from 'components/atoms/Container';
+import { Header } from 'components/molecules/Header';
+
 import { globalStyles } from 'styles/global';
 
 import SEO from '../../next-seo.config';
@@ -12,18 +15,20 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Boilerplate</title>
+        <title>Ignite Shop</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
+        <meta name="theme-color" content="#121214" />
+        <meta name="description" content="T-shirt E-commerce" />
       </Head>
       <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
+
+      <Container>
+        <Header />
+
+        <Component {...pageProps} />
+      </Container>
     </>
   );
 }
