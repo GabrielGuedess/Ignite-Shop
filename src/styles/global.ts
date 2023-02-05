@@ -1,6 +1,6 @@
-import { globalCss } from 'styles';
-
 import { Roboto } from '@next/font/google';
+
+import { globalCss } from 'styles';
 
 const roboto = Roboto({
   weight: ['400', '700'],
