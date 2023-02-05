@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Product /> should render the product correctly 1`] = `
+<main
+  class="c-hCERcZ"
+>
+  <div
+    class="c-dZmaPI"
+  >
+    <img
+      alt="Camiseta X"
+      data-nimg="1"
+      decoding="async"
+      height="480"
+      loading="lazy"
+      src="/_next/image?url=%2F&w=1080&q=75"
+      srcset="/_next/image?url=%2F&w=640&q=75 1x, /_next/image?url=%2F&w=1080&q=75 2x"
+      style="color: transparent; object-fit: cover;"
+      width="520"
+    />
+  </div>
+  <div
+    class="c-fixGjY"
+  >
+    <h1
+      class="c-imFFlW"
+    >
+      Camiseta X
+    </h1>
+    <span
+      class="c-fXvuBd"
+    >
+      R$ 7900
+    </span>
+    <p
+      class="c-bpSIlu"
+    >
+      Test
+    </p>
+    <button
+      class="c-cWyGpD"
+    >
+      Comprar agora
+    </button>
+  </div>
+</main>
+`;

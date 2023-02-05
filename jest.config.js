@@ -14,6 +14,8 @@ const customJestConfig = {
     '!src/**/stories.tsx',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
+    '!src/lib/**/*.ts',
+    '!src/pages/api/**/*.ts',
     '!src/utils/tests/*.ts(x)?',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],

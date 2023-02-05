@@ -1,6 +1,8 @@
+import Link from 'next/link';
+
 import { styled } from 'styles';
 
-export const Wrapper = styled('a', {
+export const Wrapper = styled(Link, {
   background: 'linear-gradient(180deg, #1EA483 0%, #7465D4 100%)',
   borderRadius: 8,
   cursor: 'pointer',
@@ -38,6 +40,7 @@ export const Footer = styled('footer', {
 
 export const Title = styled('strong', {
   fontSize: '$lg',
+  color: '$gray100',
 });
 
 export const Price = styled('span', {

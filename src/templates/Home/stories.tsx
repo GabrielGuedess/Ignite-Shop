@@ -1,10 +1,12 @@
 import { StoryFn, Meta } from '@storybook/react';
 
-import { Home } from '.';
+import { Home, HomeProps } from '.';
+import { mockHome } from './mock';
 
 export default {
   title: 'Templates/Home',
   component: Home,
-} as Meta;
+  args: mockHome,
+} as Meta<HomeProps>;
 
-export const Default: StoryFn = () => <Home />;
+export const Default: StoryFn<HomeProps> = args => <Home {...args} />;

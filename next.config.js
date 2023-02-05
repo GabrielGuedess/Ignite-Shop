@@ -14,8 +14,8 @@ module.exports = withBundleAnalyzer(
   withPWA({
     swcMinify: true,
     reactStrictMode: true,
-    compiler: {
-      styledComponents: true,
+    images: {
+      domains: ['files.stripe.com'],
     },
   }),
 );
